@@ -1,4 +1,4 @@
-# connect-four (last updated: 7/4/2018)
+# connect-four
 
 ## Author
 Michael Cheung
