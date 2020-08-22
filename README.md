@@ -1,3 +1,10 @@
+# connect-four (last updated: 7/4/2018)
+
+## Author
+Michael Cheung
+
+## Instructions
+
 First of all, make sure you have Node installed on your machine.
 
 To run this application, open up a Node.js command prompt, navigate to the project directory, and run:
