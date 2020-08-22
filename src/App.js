@@ -175,7 +175,7 @@ const App = () => {
   return (
     <>
       <div className="controls-wrapper">
-        <h2>98point6 Drop Token</h2>
+        <h2>Connect Four!</h2>
         <div style={{ display: !playerSelectionControls ? "" : "none" }}>
           <button className="button-new-game" onClick={customFunction()}>
             Start Over
