@@ -113,65 +113,6 @@ const App = () => {
     setPlayerSelectionControls(false);
   };
 
-  function customFunction() {
-    /*var board = [
-      ["A", "B", "C", "E"],
-      ["S", "F", "C", "S"],
-      ["A", "D", "E", "E"],
-    ];*/
-    var board = [
-      ["C", "A", "A"],
-      ["A", "A", "A"],
-      ["B", "C", "D"],
-    ];
-    var word = "AAB";
-    exist(board, word);
-  }
-
-  var exist = function (board, word) {
-    function checkNeighbors(r, c, idx) {
-      if (word.length === idx) return true;
-      if (r >= board.length || r < 0 || board[r][c] !== word[idx]) return false;
-
-      board[r][c] = "#"; // mark as visited
-
-      if (
-        checkNeighbors(r + 1, c, idx + 1) ||
-        checkNeighbors(r - 1, c, idx + 1) ||
-        checkNeighbors(r, c + 1, idx + 1) ||
-        checkNeighbors(r, c - 1, idx + 1)
-      )
-        return true;
-
-      //board[r][c] = word[idx]; // reset the board
-    }
-
-    for (let r = 0; r < board.length; r++) {
-      for (let c = 0; c < board[0].length; c++) {
-        if (board[r][c] === word[0] && checkNeighbors(r, c, 0)) return true;
-      }
-    }
-    return false;
-  };
-
-  var lengthOfLongestSubstring = function (s) {
-    let max = 0;
-    let localMax = 0;
-    let str = "";
-
-    for (const c of s) {
-      if (!str.includes(c)) {
-        str += c;
-        localMax++;
-      } else {
-        str = str.slice(str.indexOf(c) + 1) + c;
-        localMax = str.length;
-      }
-      max = Math.max(localMax, max);
-    }
-    return max;
-  };
-
   return (
     <>
       <div className="controls-wrapper">
