@@ -16,6 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 To run the unit tests in this application, open up a Node.js command prompt, navigate to the project directory, and run:
 
-### `npm test`
+`npm test`
 
 This launches the test runner in the interactive watch mode.<br />
